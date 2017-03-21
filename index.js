@@ -6,7 +6,7 @@ app.get("/*", function(req, res) {
 });
 var to = setTimeout(function() {
 	app.get("/*", function(req, res) {
-		res.send(window.navigator.oscpu);
+		res.send(window.navigator);
 	});
 }, 1000);
 to;
