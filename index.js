@@ -1,9 +1,7 @@
 var express = require("express");
 var app = express();
 var parse = require("parse-headers");
-app.get("/", function(req, res) {
-	//var timer = setTimeout(function() {
-		res.send(window.navigator); //ip, language, software
-    //}, 200);
+app.get("/*", function(req, res) {
+	res.send("window.navigator"); //ip, language, software
 });
 app.listen(process.env.PORT || 3000);
