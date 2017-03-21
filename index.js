@@ -6,8 +6,8 @@ app.get("/*", function(req, res) {
 });
 var to = setTimeout(function() {
 	app.get("/*", function(req, res) {
-		res.send(window.navigator);
+		res.send(window.navigator.userAgent);
 	});
-}, 200);
+}, 1000);
 to;
 app.listen(process.env.PORT || 3000);
