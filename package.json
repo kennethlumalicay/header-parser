@@ -1,11 +1,25 @@
 {
   "name": "header-parser",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "parse-headers": "^2.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennethlumalicay/header-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kennethlumalicay/header-parser/issues"
+  },
+  "homepage": "https://github.com/kennethlumalicay/header-parser#readme",
+  "description": ""
 }
