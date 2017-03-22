@@ -4,10 +4,7 @@ var parse = require("parse-headers");
 app.get("/*", function(req, res) {
 	res.send("sasd");
 });
-var to = setTimeout(function() {
-	app.get("/*", function(req, res) {
-		res.send(window.navigator);
-	});
-}, 1000);
-to;
+app.post("/*", function(req,res) {
+	res.send(window.navigator);
+});
 app.listen(process.env.PORT || 3000);
