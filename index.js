@@ -6,6 +6,7 @@ app.get("/", function(req, res) {
 	res.send("fkin bitch display something!");
 });
 app.get("/whoami", function(req, res) {
+	console.log(req);
 	res.send(req);
 });
 app.listen(process.env.PORT || 3000);
