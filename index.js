@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
-//var parse = require("parse-headers");
-//app.use(express.static(__dirname + "/view"));
+var parse = require("parse-headers");
+app.use(express.static(__dirname + "/view"));
 app.get("/", function(req, res) {
 	res.send("fkin bitch display something!");
 });/*
