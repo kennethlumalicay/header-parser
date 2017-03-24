@@ -3,7 +3,7 @@ var app = express();
 //var parse = require("parse-headers");
 app.use(express.static(__dirname + "/view"));
 app.get("/", function(req, res) {
-	res.send("banana");
+	res.end("banana");
 });/*
 app.get("/whoami", function(req, res) {
 	var ip = req.headers.x-forwarded-for || req.connection.remoteAddress;
