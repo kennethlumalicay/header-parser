@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.2",
-    "parse-headers": "^2.0.1"
   },
   "devDependencies": {},
   "repository": {
